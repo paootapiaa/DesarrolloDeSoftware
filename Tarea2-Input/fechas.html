@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InputFechas</title>
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Georgia, serif;
+      background-color: #f0edf9;
+    }
+    header {
+      background-color: #3e1f8a;
+      padding: 28px 40px;
+    }
+    header h1 {
+      color: #ffffff;
+      margin: 0 0 4px 0;
+      font-size: 1.6em;
+    }
+    header a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 0.88em;
+      padding: 6px 14px;
+      border-radius: 4px;
+      border: 1px solid #6c3fc5;
+    }
+    main {
+      max-width: 820px;
+      margin: 36px auto;
+    }
+    article {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+    }
+    article h3 {
+      color: #3e1f8a;
+      font-size: 1.05em;
+    }
+    ul li {
+      font-size: 0.9em;
+      line-height: 1.7;
+      color: #000000;
+    }
+    section {
+      background-color: #1a1a2e;
+      color: #1ac9a0;
+      padding: 12px 16px;
+      border-radius: 6px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.83em;
+      margin: 12px 0 16px 0;
+    }
+    label {
+      display: block;
+      font-size: 0.88em;
+      font-weight: bold;
+      color: #6c3fc5;
+    }
+    input {
+      display: block;
+      padding: 8px 12px;
+      border: 1.5px solid #9b6ddd;
+      border-radius: 4px;
+      font-size: 0.92em;
+      color: #000000;
+      background-color: #fdfbff;
+      width: 100%;
+      max-width: 360px;
+    }
+    footer {
+      background-color: #3e1f8a;
+      color: #c9bff0;
+      text-align: center;
+      padding: 18px;
+      font-size: 0.83em;
+    }
+    footer p {
+      margin: 3px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Input Tipo Numerico</h1><br>
+    <a href="Tarea2.html">Volver al inicio</a>
+  </header>
+  <main>
+    <article>
+      <h3>type="date"</h3>
+      <ul>
+        <li>Despliega un selector de fecha tipo calendario en el navegador.</li>
+        <li>El valor se envia en formato AAAA-MM-DD.</li>
+        <li>Se puede limitar el rango de fechas con los atributos min y max.</li>
+        <li>Util para registrar fechas de nacimiento, citas o eventos.</li>
+      </ul>
+      <section>input type="date" name="nacimiento"</section>
+      <label for="f1">Fecha de nacimiento:</label>
+      <input type="date" id="f1" name="nacimiento">
+    </article>
+    <article>
+      <h3>type="time"</h3>
+      <ul>
+        <li>Permite seleccionar una hora en formato HH:MM.</li>
+        <li>El navegador puede mostrar formato 12 o 24 horas segun configuracion.</li>
+        <li>Se usa para definir horarios de citas, reuniones o eventos.</li>
+        <li>Atributos comunes: min, max, step.</li>
+      </ul>
+      <section>input type="time" name="hora"</section>
+      <label for="f2">Hora de la cita:</label>
+      <input type="time" id="f2" name="hora">
+    </article>
+    <article>
+      <h3>type="datetime-local"</h3>
+      <ul>
+        <li>Combina fecha y hora en un unico campo de entrada.</li>
+        <li>No incluye informacion de zona horaria.</li>
+        <li>Ideal para reservas, registro de eventos y programacion de tareas.</li>
+        <li>El valor se envia en formato AAAA-MM-DDTHH:MM.</li>
+      </ul>
+      <section>input type="datetime-local" name="evento"</section>
+      <label for="f3">Fecha y hora del evento:</label>
+      <input type="datetime-local" id="f3" name="evento">
+    </article>
+    <article>
+      <h3>type="month"</h3>
+      <ul>
+        <li>Permite seleccionar unicamente mes y anio, sin especificar el dia.</li>
+        <li>Util para periodos de facturacion, informes mensuales o vencimientos.</li>
+        <li>El valor se envia en formato AAAA-MM.</li>
+        <li>Atributos comunes: min, max.</li>
+      </ul>
+      <section>input type="month" name="mes"</section>
+      <label for="f4">Mes de inicio:</label>
+      <input type="month" id="f4" name="mes">
+    </article>
+    <article>
+      <h3>type="week"</h3>
+      <ul>
+        <li>Permite seleccionar una semana especifica dentro de un anio.</li>
+        <li>El rango va de la Semana 1 a la Semana 52 o 53 segun el anio.</li>
+        <li>Util para planificacion semanal y horarios academicos.</li>
+        <li>El valor se envia en formato AAAA-Www, por ejemplo: 2026-W15.</li>
+      </ul>
+      <section>input type="week" name="semana"</section>
+      <label for="f5">Semana de entrega:</label>
+      <input type="week" id="f5" name="semana">
+    </article>
+  </main>
+  <footer>
+    <p>U2 S3 Tarea - Uso de la etiqueta Input en HTML</p>
+    <p>Tapia Mendez Paola Solange</p>
+  </footer> 
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InputTexto</title>
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Georgia, serif;
+      background-color: #f0edf9;
+    }
+    header {
+      background-color: #3e1f8a;
+      padding: 28px 40px;
+    }
+    header h1 {
+      color: #ffffff;
+      margin: 0 0 4px 0;
+      font-size: 1.6em;
+    }
+    header a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 0.88em;
+      padding: 6px 14px;
+      border-radius: 4px;
+      border: 1px solid #6c3fc5;
+    }
+    main {
+      max-width: 820px;
+      margin: 36px auto;
+    }
+    article {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+    }
+    article h3 {
+      color: #3e1f8a;
+      font-size: 1.05em;
+    }
+    ul li {
+      font-size: 0.9em;
+      line-height: 1.7;
+      color: #000000;
+    }
+    section {
+      background-color: #1a1a2e;
+      color: #1ac9a0;
+      padding: 12px 16px;
+      border-radius: 6px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.83em;
+      margin: 12px 0 16px 0;
+    }
+    label {
+      display: block;
+      font-size: 0.88em;
+      font-weight: bold;
+      color: #6c3fc5;
+    }
+    input {
+      display: block;
+      padding: 8px 12px;
+      border: 1.5px solid #9b6ddd;
+      border-radius: 4px;
+      font-size: 0.92em;
+      color: #000000;
+      background-color: #fdfbff;
+      width: 100%;
+      max-width: 360px;
+    }
+    footer {
+      background-color: #3e1f8a;
+      color: #c9bff0;
+      text-align: center;
+      padding: 18px;
+      font-size: 0.83em;
+    }
+    footer p {
+      margin: 3px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Input Tipo Numerico</h1><br>
+    <a href="Tarea2.html">Volver al inicio</a>
+  </header>
+  <main>
+    <article>
+      <h3>type="text"</h3>
+      <ul>
+        <li>Es el tipo predeterminado de la etiqueta input.</li>
+        <li>Permite escribir cualquier texto en una sola linea.</li>
+        <li>Se usa para nombres, titulos y datos de texto libre.</li>
+        <li>Atributos comunes: placeholder, maxlength, required.</li>
+      </ul>
+      <section>input type="text" name="nombre" placeholder="Ingresa tu nombre"</section>
+      <label for="t1">Nombre completo:</label>
+      <input type="text" id="t1" name="nombre" placeholder="Ej: Maria Garcia">
+    </article>
+    <article>
+      <h3>type="password"</h3>
+      <ul>
+        <li>Oculta los caracteres mostrando puntos o asteriscos.</li>
+        <li>Se usa para contrasenas y datos confidenciales.</li>
+        <li>El navegador puede ofrecer opcion para mostrar u ocultar el texto.</li>
+        <li>Atributos comunes: minlength, maxlength, required.</li>
+      </ul>
+      <section>input type="password" name="clave" placeholder="Contrasena"</section>
+      <label for="t2">Contrasena:</label>
+      <input type="password" id="t2" name="clave" placeholder="Ingresa tu contrasena">
+    </article>
+    <article>
+      <h3>type="email"</h3>
+      <ul>
+        <li>Valida que el texto tenga formato de correo electronico.</li>
+        <li>El formato requerido es: usuario@dominio.com</li>
+        <li>En dispositivos moviles muestra teclado con el simbolo @.</li>
+        <li>Atributos comunes: placeholder, required, multiple.</li>
+      </ul>
+      <section>input type="email" name="correo" placeholder="usuario@ejemplo.com"</section>
+      <label for="t3">Correo electronico:</label>
+      <input type="email" id="t3" name="correo" placeholder="usuario@ejemplo.com">
+    </article>
+    <article>
+      <h3>type="tel"</h3>
+      <ul>
+        <li>Disenado para ingresar numeros de telefono.</li>
+        <li>En dispositivos moviles despliega el teclado numerico.</li>
+        <li>No aplica validacion automatica de formato en el navegador.</li>
+        <li>Se recomienda el atributo pattern para validar el formato.</li>
+      </ul>
+      <section>input type="tel" name="telefono" placeholder="+593 09 999 9999"</section>
+      <label for="t4">Numero de telefono:</label>
+      <input type="tel" id="t4" name="telefono" placeholder="+593 09 999 9999">
+    </article>
+    <article>
+      <h3>type="url"</h3>
+      <ul>
+        <li>Valida que el valor ingresado sea una URL valida.</li>
+        <li>La URL debe comenzar con http:// o https://</li>
+        <li>Util para solicitar direcciones de sitios web o perfiles.</li>
+        <li>Atributos comunes: placeholder, required, pattern.</li>
+      </ul>
+      <section>input type="url" name="sitio" placeholder="https://www.ejemplo.com"</section>
+      <label for="t5">Sitio web:</label>
+      <input type="url" id="t5" name="sitio" placeholder="https://www.ejemplo.com">
+    </article>
+    <article>
+      <h3>type="search"</h3>
+      <ul>
+        <li>Campo semanticamente pensado para busquedas.</li>
+        <li>Algunos navegadores muestran un boton X para borrar rapidamente.</li>
+        <li>Visualmente similar a type text pero con distinto significado semantico.</li>
+        <li>Atributos comunes: placeholder, required.</li>
+      </ul>
+      <section>input type="search" name="buscar" placeholder="Buscar..."</section>
+      <label for="t6">Buscar:</label>
+      <input type="search" id="t6" name="buscar" placeholder="Buscar contenido...">
+    </article>
+  </main>
+  <footer>
+    <p>U2 S3 Tarea - Uso de la etiqueta Input en HTML</p>
+    <p>Tapia Mendez Paola Solange</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InputNumeros</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Georgia, serif;
+      background-color: #f0edf9;
+    }
+    header {
+      background-color: #3e1f8a;
+      padding: 28px 40px;
+    }
+    header h1 {
+      color: #ffffff;
+      margin: 0 0 4px 0;
+      font-size: 1.6em;
+    }
+    header a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 0.88em;
+      padding: 6px 14px;
+      border-radius: 4px;
+      border: 1px solid #6c3fc5;
+    }
+    main {
+      max-width: 820px;
+      margin: 36px auto;
+    }
+    article {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+    }
+    article h3 {
+      color: #3e1f8a;
+      font-size: 1.05em;
+    }
+    ul li {
+      font-size: 0.9em;
+      line-height: 1.7;
+      color: #000000;
+    }
+    section {
+      background-color: #1a1a2e;
+      color: #1ac9a0;
+      padding: 12px 16px;
+      border-radius: 6px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.83em;
+      margin: 12px 0 16px 0;
+    }
+    label {
+      display: block;
+      font-size: 0.88em;
+      font-weight: bold;
+      color: #6c3fc5;
+    }
+    input {
+      display: block;
+      padding: 8px 12px;
+      border: 1.5px solid #9b6ddd;
+      border-radius: 4px;
+      font-size: 0.92em;
+      color: #000000;
+      background-color: #fdfbff;
+      width: 100%;
+      max-width: 360px;
+    }
+    footer {
+      background-color: #3e1f8a;
+      color: #c9bff0;
+      text-align: center;
+      padding: 18px;
+      font-size: 0.83em;
+    }
+    footer p {
+      margin: 3px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Input Tipo Numerico</h1><br>
+    <a href="Tarea2.html">Volver al inicio</a>
+  </header>
+  <main>
+    <article>
+      <h3>type="number"</h3>
+      <ul>
+        <li>Acepta unicamente valores numericos.</li>
+        <li>Muestra flechas arriba y abajo para cambiar el valor.</li>
+        <li>El atributo min define el valor minimo permitido.</li>
+        <li>El atributo max define el valor maximo permitido.</li>
+        <li>El atributo step define el intervalo de incremento.</li>
+      </ul>
+      <section>input type="number" name="edad" min="1" max="120" step="1"</section>
+      <label for="label">Edad (entre 1 y 120):</label>
+      <input type="number" id="n1" name="edad" min="1" max="120" step="1">
+    </article>
+    <article>
+      <h3>type="range"</h3>
+      <ul>
+        <li>Presenta un control deslizante para seleccionar un valor en un rango.</li>
+        <li>Se usa cuando el valor exacto no es critico, como volumen o brillo.</li>
+        <li>Los atributos min y max definen los extremos del rango.</li>
+        <li>El atributo value establece el valor inicial del deslizador.</li>
+      </ul>
+      <section>input type="range" name="nivel" min="0" max="100" value="50"</section>
+      <label for="label2">Nivel de satisfaccion (0 al 100):</label>
+      <input type="range" id="n2" name="nivel" min="0" max="100" value="50" style="accent-color:#6c3fc5;">
+    </article>
+  </main>
+  <footer>
+    <p>U2 S3 Tarea - Uso de la etiqueta Input en HTML</p>
+    <p>Tapia Mendez Paola Solange</p>
+  </footer>
+</body>
+</html>

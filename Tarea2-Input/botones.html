@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InputBotones</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Georgia, serif;
+        background-color: #f0edf9;
+      }
+      header {
+        background-color: #3e1f8a;
+        padding: 28px 40px;
+      }
+      header h1 {
+        color: #ffffff;
+        margin: 0 0 4px 0;
+        font-size: 1.6em;
+      }
+      header a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 0.88em;
+        padding: 6px 14px;
+        border-radius: 4px;
+        border: 1px solid #6c3fc5;
+      }
+      main {
+        max-width: 820px;
+        margin: 36px auto;
+      }
+      article {
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 24px 28px;
+        margin-bottom: 28px;
+      }
+      article h3 {
+        color: #3e1f8a;
+        font-size: 1.05em;
+      }
+      ul li {
+        font-size: 0.9em;
+        line-height: 1.7;
+        color: #000000;
+      }
+      section {
+        background-color: #1a1a2e;
+        color: #1ac9a0;
+        padding: 12px 16px;
+        border-radius: 6px;
+        font-family: 'Courier New', monospace;
+        font-size: 0.83em;
+        margin: 12px 0 16px 0;
+      }
+      label {
+        display: block;
+        font-size: 0.88em;
+        font-weight: bold;
+        color: #6c3fc5;
+      }
+      input {
+        display: block;
+        padding: 8px 12px;
+        border: 1.5px solid #9b6ddd;
+        border-radius: 4px;
+        font-size: 0.92em;
+        color: #000000;
+        background-color: #fdfbff;
+        width: 100%;
+        max-width: 360px;
+      }
+      footer {
+        background-color: #3e1f8a;
+        color: #c9bff0;
+        text-align: center;
+        padding: 18px;
+        font-size: 0.83em;
+      }
+      footer p {
+        margin: 3px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Input Tipo Numerico</h1><br>
+      <a href="Tarea2.html">Volver al inicio</a>
+    </header>
+    <main>
+      <article>
+        <h3>type="submit"</h3>
+        <ul>
+          <li>Crea un boton que envia los datos del formulario al servidor.</li>
+          <li>El destino del envio se define en el atributo action del formulario.</li>
+          <li>El atributo value define el texto visible en el boton.</li>
+          <li>Es el boton de envio mas comun en formularios HTML.</li>
+        </ul>
+        <section>input type="submit" value="Enviar formulario"</section>
+        <input type="submit" value="Enviar formulario">
+      </article>
+      <article>
+        <h3>type="reset"</h3>
+        <ul>
+          <li>Restablece todos los campos del formulario a sus valores iniciales.</li>
+          <li>No envia datos al servidor; solo limpia el formulario en el navegador.</li>
+          <li>El atributo value define el texto visible en el boton.</li>
+          <li>Util cuando el usuario quiere borrar lo escrito y empezar de nuevo.</li>
+        </ul>
+        <section>input type="reset" value="Limpiar formulario"</section>
+        <input type="reset" value="Limpiar formulario">
+      </article>
+      <article>
+        <h3>type="button"</h3>
+        <ul>
+          <li>Crea un boton generico sin comportamiento predeterminado.</li>
+          <li>Su accion se define mediante JavaScript con el atributo onclick.</li>
+          <li>El atributo value define el texto visible en el boton.</li>
+          <li>Es diferente de submit porque no envia el formulario por defecto.</li>
+        </ul>
+        <section>input type="button" value="Haz clic aqui" onclick="alert('Boton presionado!')"</section>
+        <input type="button" value="Haz clic aqui" onclick="alert('Boton presionado!')" style="max-width:220px;">
+      </article>
+      <article>
+        <h3>type="image"</h3>
+        <ul>
+          <li>Crea un boton de envio usando una imagen en lugar de texto.</li>
+          <li>Al hacer clic envia las coordenadas X e Y del punto donde se hizo clic.</li>
+          <li>El atributo src indica la ruta de la imagen a mostrar.</li>
+          <li>El atributo alt proporciona texto alternativo si la imagen no carga.</li>
+        </ul>
+        <section>input type="image" src="boton.png" alt="Tipos de Input" width="50px"</section><br>
+        <input type="image" src="img/imput.png" alt="Tipos de Input" width="50px" height="auto">
+      </article>
+    </main>
+    <footer>
+      <p>U2 S3 Tarea - Uso de la etiqueta Input en HTML</p>
+      <p>Tapia Mendez Paola Solange</p>
+    </footer> 
+  </body>
+</html>

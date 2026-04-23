@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InputArchivos</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Georgia, serif;
+        background-color: #f0edf9;
+      }
+      header {
+        background-color: #3e1f8a;
+        padding: 28px 40px;
+      }
+      header h1 {
+        color: #ffffff;
+        margin: 0 0 4px 0;
+        font-size: 1.6em;
+      }
+      header a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 0.88em;
+        padding: 6px 14px;
+        border-radius: 4px;
+        border: 1px solid #6c3fc5;
+      }
+      main {
+        max-width: 820px;
+        margin: 36px auto;
+      }
+      article {
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 24px 28px;
+        margin-bottom: 28px;
+      }
+      article h3 {
+        color: #3e1f8a;
+        font-size: 1.05em;
+      }
+      ul li {
+        font-size: 0.9em;
+        line-height: 1.7;
+        color: #000000;
+      }
+      section {
+        background-color: #1a1a2e;
+        color: #1ac9a0;
+        padding: 12px 16px;
+        border-radius: 6px;
+        font-family: 'Courier New', monospace;
+        font-size: 0.83em;
+        margin: 12px 0 16px 0;
+      }
+      label {
+        display: block;
+        font-size: 0.88em;
+        font-weight: bold;
+        color: #6c3fc5;
+      }
+      input {
+        display: block;
+        padding: 8px 12px;
+        border: 1.5px solid #9b6ddd;
+        border-radius: 4px;
+        font-size: 0.92em;
+        color: #000000;
+        background-color: #fdfbff;
+        width: 100%;
+        max-width: 360px;
+      }
+      footer {
+        background-color: #3e1f8a;
+        color: #c9bff0;
+        text-align: center;
+        padding: 18px;
+        font-size: 0.83em;
+      }
+      footer p {
+        margin: 3px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Input Tipo Numerico</h1><br>
+      <a href="Tarea2.html">Volver al inicio</a>
+    </header>
+    <main>
+      <article>
+        <h3>type="file"</h3>
+        <ul>
+          <li>Abre el explorador de archivos del dispositivo.</li>
+          <li>Permite seleccionar uno o varios archivos para subir al servidor.</li>
+          <li>El atributo accept filtra los tipos de archivo permitidos.</li>
+          <li>Para enviar archivos el formulario necesita enctype igual a multipart/form-data.</li>
+          <li>El atributo multiple permite seleccionar mas de un archivo.</li>
+        </ul>
+        <section>input type="file" name="documento" accept=".pdf,.docx"</section>
+        <label for="a1">Subir documento (PDF o Word):</label> <br>
+        <input type="file" id="a1" name="documento" accept=".pdf,.docx">
+      </article>
+      <article>
+        <h3>type="hidden"</h3>
+        <ul>
+          <li>Campo invisible para el usuario pero incluido al enviar el formulario.</li>
+          <li>Se utiliza para pasar datos de forma transparente, como identificadores de sesion.</li>
+          <li>Tambien se usa para enviar tokens de seguridad o IDs de registros.</li>
+          <li>El usuario no puede ver ni modificar este campo desde la pagina.</li>
+        </ul>
+        <section>input type="hidden" name="idUsuario" value="12345"</section>
+        <p style="font-size:12px; color:#555; ">Este campo no se ve en la pagina pero si existe en el codigo fuente:</p>
+        <section style="background-color:#f0edf9; color:#3e1f8a;">input type="hidden" name="idUsuario" value="12345"</section>
+        <input type="hidden" name="idUsuario" value="12345">
+      </article>
+    </main>
+    <footer>
+      <p>U2 S3 Tarea - Uso de la etiqueta Input en HTML</p>
+      <p>Tapia Mendez Paola Solange</p>
+    </footer> 
+  </body>
+</html>
